@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depot des fichiers</title>
+</head>
+<body>
+    <h1>depot de fichiers</h1>
+    <form action ='http://localhost:8080/upload'enctype="multipart/form-data"method="post">
+        <input type='file' name='upload'>
+        <input type='submit'name='submit'>
+    </form>
+    <div id='tableau'>
+        <h1>affichage des fichiers</h1>
+        <table border='1'>
+            <tr><th>nom fichier</th></tr>
+            <tr><td><a href='../../public/upload/<%=result1%>'><%=result1%></a></td></tr>
+        </table>
+          
+        
+
+        
+    </div>
+    
+    
+</body>
+</html>
